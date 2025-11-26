@@ -1,0 +1,334 @@
+/* BASE RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Nunito Sans', sans-serif;
+background: #faf5f0;
+color: #333;
+line-height: 1.7;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+font-family: 'Playfair Display', serif;
+color: #21160f;
+}
+
+/* HEADER BAR */
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 50;
+background: rgba(255, 255, 255, 0.35);
+backdrop-filter: blur(12px);
+}
+
+.logo {
+max-height: 85px;
+}
+
+.nav a {
+margin-left: 1.5rem;
+font-weight: 600;
+text-decoration: none;
+color: #2c1d14;
+}
+
+.nav a:hover {
+color: #5fb3ff;
+}
+
+/* HERO VIDEO */
+.hero-video-wrap {
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+.hero-video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* HERO TEXT */
+.hero-text-wrap {
+max-width: 900px;
+margin: 3rem auto;
+padding: 0 1.5rem;
+padding-top: 2rem;
+}
+
+.hero-text-wrap h1 {
+margin-bottom: 1rem;
+}
+
+.hero-sub {
+margin-bottom: 0.8rem;
+}
+
+.hero-body {
+margin-bottom: 1rem;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+display: flex;
+gap: 1rem;
+margin-top: 1.5rem;
+}
+
+/* BUTTONS */
+.btn {
+padding: 0.8rem 1.6rem;
+border-radius: 40px;
+font-weight: 600;
+text-decoration: none;
+}
+
+.btn-main {
+background: #5fb3ff;
+color: #fff;
+}
+
+.btn-main:hover {
+background: #3c8fd6;
+}
+
+.btn-secondary {
+color: #5fb3ff;
+border: 1px solid #5fb3ff;
+}
+
+.btn-secondary:hover {
+background: rgba(95, 179, 255, 0.1);
+}
+
+/* TESTIMONIAL */
+.testimonial {
+max-width: 900px;
+margin: 2rem auto;
+padding: 0 1.5rem;
+}
+
+.testimonial-card {
+background: #ffffff;
+border: 2px solid rgba(95, 179, 255, 0.35);
+border-radius: 18px;
+padding: 1.8rem 2rem;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+color: gold;
+font-size: 1.4rem;
+margin-bottom: 0.5rem;
+}
+
+.testimonial-quote {
+margin-bottom: 0.6rem;
+}
+
+.testimonial-name {
+font-weight: bold;
+margin-bottom: 0.2rem;
+}
+
+.testimonial-link {
+display: inline-block;
+margin-top: 0.4rem;
+font-weight: 600;
+color: #3c8fd6;
+text-decoration: none;
+}
+
+.testimonial-link:hover {
+text-decoration: underline;
+}
+
+/* HOLIDAY SECTION */
+.holiday {
+max-width: 1100px;
+margin: 3rem auto;
+padding: 0 1.5rem;
+}
+
+.holiday-card {
+display: grid;
+gap: 1.5rem;
+margin-top: 1.5rem;
+}
+
+.holiday-card img {
+width: 100%;
+border-radius: 1rem;
+}
+
+.holiday-info h3 {
+margin-bottom: 0.5rem;
+}
+
+.holiday-info p {
+margin-bottom: 0.5rem;
+}
+
+.link {
+color: #3c8fd6;
+font-weight: 600;
+text-decoration: none;
+}
+
+.link:hover {
+text-decoration: underline;
+}
+
+/* BENEFIT CARDS */
+.benefits {
+max-width: 1100px;
+margin: 3rem auto;
+padding: 0 1.5rem;
+}
+
+.benefit-grid {
+display: grid;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.benefit {
+background: #ffffff;
+border: 2px solid rgba(95, 179, 255, 0.35);
+border-radius: 18px;
+padding: 1.4rem 1.7rem;
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
+position: relative;
+}
+
+/* blue top bar on benefit cards */
+.benefit::before {
+content: "";
+position: absolute;
+top: 0;
+left: 1.4rem;
+right: 1.4rem;
+height: 3px;
+background: linear-gradient(90deg, #5fb3ff, #8fd1ff);
+border-radius: 999px;
+}
+
+/* EXPERIENCE */
+.experience {
+max-width: 1100px;
+margin: 3rem auto;
+padding: 0 1.5rem 4rem;
+}
+
+.experience-text p + p {
+margin-top: 0.8rem;
+}
+
+/* FOOTER */
+.footer {
+text-align: center;
+padding: 2rem 1rem 3rem;
+color: #6b5a4c;
+font-size: 0.95rem;
+}
+
+/* SOCIAL ICONS STYLE A */
+.social-row {
+margin-top: 1rem;
+display: flex;
+justify-content: center;
+gap: 0.8rem;
+}
+
+.social-icon {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #fff;
+border: 1px solid #111;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: #111;
+transition: 0.2s;
+position: relative;
+}
+
+.social-icon svg {
+width: 18px;
+height: 18px;
+}
+
+.social-icon:hover {
+background: #3c8fd6;
+color: #fff;
+border-color: #3c8fd6;
+}
+
+/* screen reader text */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
+/* ABOUT PAGE */
+.about-page {
+max-width: 900px;
+margin: 8rem auto 4rem;
+padding: 0 1.5rem;
+}
+
+.about-page h1 {
+margin-bottom: 1rem;
+}
+
+.about-intro {
+margin-bottom: 1.5rem;
+}
+
+.about-section {
+margin-top: 2rem;
+}
+
+.about-section p + p {
+margin-top: 0.7rem;
+}
+
+.signature {
+margin-top: 1.5rem;
+font-style: italic;
+}
+
+/* RESPONSIVE LAYOUTS */
+@media (min-width: 768px) {
+.holiday-card {
+grid-template-columns: 1fr 1fr;
+}
+
+.benefit-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
